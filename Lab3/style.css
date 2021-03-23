@@ -1,0 +1,294 @@
+
+
+@font-face{
+    font-family: Montserrat;
+    src:url("fonts/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: Montserrat-Light-Italic;
+    src:url("fonts/Montserrat-LightItalic.ttf");
+}
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src:url("fonts/Montserrat-SemiBold.otf");
+}
+
+
+body {
+    margin: 0;
+
+
+}
+
+header {
+    background-color: #0084d5;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+.list-icon {
+    margin-left: 14cm;
+    margin-top: 0.4cm;
+    width:33px;
+    height:23px;
+    order:1;
+}
+
+.logo-icon {
+    margin-left: 11cm;
+    margin-top: 0.2cm;
+    width: 90px;
+    height:43px;
+    order:2;
+}
+
+.social-apps{
+    order:3;
+    display:inline-flex;
+    flex-direction: row;
+    margin-left:8cm;
+    margin-top:0.4cm;
+
+}
+
+
+.facebook-icon {
+    order:1;
+
+    height: 24px;
+}
+
+.twitter-icon{
+    order:2;
+    margin-left: 0.29cm;
+    height: 24px;
+}
+
+.pinterest-icon {
+    order:3;
+    margin-left: 0.29cm;
+    height: 24px;
+}
+.instagram-icon {
+    order:4;
+    margin-left: 0.29cm;
+    height: 24px;
+}
+
+.cat {
+    height:670px;
+    width:100%;
+    background-image: url("images/Cat.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.text-on-cat{
+    margin-top: 400px;
+    margin-left: 540px;
+    color: rgb(255,255,255);
+    font-size: 33px;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+.animals{
+    color:#FFFFFF;
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+}
+.overview {
+
+    margin-top:24px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: Montserrat,sans-serif;
+    font-size: 33px;
+    text-align: start;
+    position: relative;
+
+
+
+}
+
+.By{
+    font-style:italic;
+    font-weight: lighter;
+    font-family: Montserrat-Light-Italic,sans-serif;
+    line-height: normal;
+    letter-spacing: normal;
+    display: inline-flex;
+    font-size: 16px;
+    margin-right: 5px;
+
+}
+
+.Pilkington{
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    display: inline-flex;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-left: 5px;
+}
+
+.container-author{
+    display: inline-flex;
+    width: 160px;
+    margin-top: 25px;
+
+}
+
+.container-down
+{
+    display: flex;
+    margin-top: 25px;
+    position: center;
+    align-self: center;
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.box1{
+    margin:13px;
+}
+
+
+.box2{
+    margin:13px;
+}
+
+
+.box3{
+    margin:13px;
+}
+
+.vertical-writings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: center;
+    align-self: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: -30px;
+
+}
+.crafty-snap-show{
+
+    height:60px;
+    width: 323px;
+    margin:13px;
+    order:1;
+    background-color: #f4b4b3;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+}
+
+.new-snap-show{
+    height:60px;
+    width: 323px;
+    margin:13px;
+    order:2;
+    background-color: #fdd60e;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+}
+
+.fact-of-the-day{
+    height:60px;
+    width: 323px;
+    margin:13px;
+    order:3;
+    background-color: #c1002a;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+
+}
+
+.small-rectangles{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: center;
+
+    padding: 0;
+    margin-top: -232px;
+
+}
+
+.crafty{
+
+    height:25px;
+    width: 180px;
+    margin-left:580px;
+    margin-top:79px;
+    order:1;
+    background-color: #f4b4b3;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+
+}
+
+.good-vibes{
+
+    height:25px;
+    width: 180px;
+    margin-top: 79px;
+    margin-left: 173px;
+    order:2;
+    background-color: #fdd60e;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+
+
+}
+.facts\!\!\!{
+    height:25px;
+    width: 180px;
+    margin-top: 79px;
+    margin-left: 165px;
+    order:3;
+    background-color: #c1002a;
+    font-family: Montserrat-SemiBold,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 2em;
+}
