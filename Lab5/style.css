@@ -1,0 +1,19 @@
+
+body{
+    align-items: center;
+}
+td {
+    padding:2px;
+    width: 300px;
+    height: 300px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width:100%;
+    height:auto;
+}
