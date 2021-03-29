@@ -1,0 +1,10 @@
+.highlight {
+    background-color: yellow;
+}
+pre{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin-left: -8%;
+
+}
