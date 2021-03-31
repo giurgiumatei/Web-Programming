@@ -4,7 +4,7 @@ $(document).ready(function() {
     var pre = $('pre');
 
     pre.dblclick(function(e) {
-        var range = window.getSelection() || document.getSelection() || document.selection.createRange();
+        var range = window.getSelection() || document.getSelection();
         var word = $.trim(range.toString());
         if(word !== '') {
             var sentences = document.querySelector('#sentences');
