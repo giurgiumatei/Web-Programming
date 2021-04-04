@@ -10,14 +10,20 @@ session_start();
 $mysqli = new mysqli('localhost','matei','mamaligacutocana', 'vacation') or die(mysqli_error($mysqli));
 
 $update = false;
-$name = '';
-$location = '';
+$city = '';
+$country= '';
+$description= '';
+$targets= '';
+$cost= '';
 $id = 0;
 // add
 if (isset($_POST['save'])){ //check if the save button has been pressed
-    $name = $_POST['name'];
-    $location = $_POST['location'];
-    $mysqli->query("INSERT INTO data (name, location) VALUES ('$name', '$location')") or
+    $city = $_POST['city'];
+    $country = $_POST['country'];
+    $description = $_POST['description'];
+    $targets = $_POST['targets'];
+    $cost = $_POST['cost'];
+    $mysqli->query("INSERT INTO data (city, country, description, targets, cost) VALUES ('$city', '$country', '$description', '$targets', '$cost')") or
             die($mysqli->error);
 
     $_SESSION['message'] = "Record has been saved!";
@@ -47,17 +53,23 @@ if (isset($_GET['edit'])){
 
     if($result == true){ //verify if a row has been found
         $row = $result->fetch_array();
-        $name = $row['name'];
-        $location = $row['location'];
+        $city = $row['city'];
+        $country = $row['country'];
+        $description = $row['description'];
+        $targets = $row['targets'];
+        $cost = $row['cost'];
     }
 }
 
 if (isset($_POST['update'])){
     $id = $_POST['id'];
-    $name = $_POST['name'];
-    $location = $_POST['location'];
+    $city = $_POST['city'];
+    $country = $_POST['country'];
+    $description = $_POST['description'];
+    $targets = $_POST['targets'];
+    $cost = $_POST['cost'];
 
-    $mysqli->query("UPDATE data SET name='$name', location='$location' WHERE id=$id")
+    $mysqli->query("UPDATE data SET city='$city', country='$country', description='$description', targets='$targets', cost='$cost' WHERE id=$id")
             or die($mysqli->error);
 
     $_SESSION['message'] = "Record has been updated!";
@@ -65,3 +77,5 @@ if (isset($_POST['update'])){
 
     header("location: index.php");// redirects user back to index.php
 }
+
+

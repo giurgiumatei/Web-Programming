@@ -15,6 +15,7 @@
         <?php
             echo $_SESSION['message'];
             unset($_SESSION['message']);
+            header("Refresh:1");
         ?>
     </div>
     <?php endif ?>
@@ -28,16 +29,22 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Location</th>
-                    <th colspan="2">Action</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Description</th>
+                    <th>Targets</th>
+                    <th>Cost</th>
+                    <th colspan="5">Action</th>
                 </tr>
             </thead>
             <?php
                 while($row = $result->fetch_assoc()): ?>
                 <tr>
-                    <td><?php echo $row['name']; ?></td>
-                    <td><?php echo $row['location']; ?></td>
+                    <td><?php echo $row['city']; ?></td>
+                    <td><?php echo $row['country']; ?></td>
+                    <td><?php echo $row['description']; ?></td>
+                    <td><?php echo $row['targets']; ?></td>
+                    <td><?php echo $row['cost']; ?></td>
                     <td>
                         <a href="index.php?edit=<?php echo $row['id']; ?>"
                            class="btn btn-info">Edit</a>
@@ -52,14 +59,29 @@
         <form action="process.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <div class="form-group">
-                <label>Name</label>
-                <input type="text" name="name" class="form-control"
-                       value="<?php echo $name; ?>" placeholder="Enter your name" >
+                <label>City</label>
+                <input type="text" name="city" class="form-control"
+                       value="<?php echo $city; ?>" placeholder="Enter a city " >
             </div>
             <div class="form-group">
-                <label>Location</label>
-                <input type="text" name="location" value="<?php echo $location; ?>"
-                       class="form-control" placeholder="Enter your location" >
+                <label>Country</label>
+                <input type="text" name="country" value="<?php echo $country; ?>"
+                       class="form-control" placeholder="Enter a country" >
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" name="description" value="<?php echo $description; ?>"
+                       class="form-control" placeholder="Enter a description" >
+            </div>
+            <div class="form-group">
+                <label>Tourist Targets</label>
+                <input type="text" name="targets" value="<?php echo $targets; ?>"
+                       class="form-control" placeholder="Enter some targets" >
+            </div>
+            <div class="Estimated cost per day">
+                <label>Estimated Cost</label>
+                <input type="text" name="cost" value="<?php echo $cost; ?>"
+                       class="form-control" placeholder="Enter a cost" >
             </div>
             <div class="form-group">
                 <?php
