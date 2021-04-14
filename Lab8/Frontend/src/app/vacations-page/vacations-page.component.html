@@ -1,0 +1,12 @@
+<div>
+  <nav class="navbar">
+    <input class="form-control" type="text" name="country" [(ngModel)]="country"
+           (ngModelChange)="Search()" placeholder="Enter Country to filter by">
+  </nav>
+  <div style="margin-top:10px; display:flex;" class="content-box" *ngFor="let vacation of vacations | paginate: {itemsPerPage:4, currentPage:pageNumber};">
+    <a routerLink="/vacations/{{vacation.id}}">
+      <h3>{{vacation.city}}, {{vacation.country}} - ${{vacation.cost}}</h3>
+    </a>
+  </div>
+  <pagination-controls (pageChange) = "pageNumber = $event"></pagination-controls>
+</div>

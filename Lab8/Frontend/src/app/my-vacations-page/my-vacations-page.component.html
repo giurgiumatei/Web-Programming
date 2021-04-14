@@ -1,0 +1,14 @@
+<div class="content-box" *ngFor="let vacation of vacations">
+  <h3>{{vacation.city}}</h3>
+  <p>{{vacation.description}}</p>
+  <p>${{vacation.cost}}</p>
+  <div class="buttons-container">
+    <a routerLink="/edit-vacation/{{vacation.id}}">
+      <button>Edit</button>
+    </a>
+    <button (click)="onDeleteClicked(vacation.id)">Delete</button>
+  </div>
+</div>
+<a routerLink="/new-vacation">
+  <button>Create New Vacation</button>
+</a>
