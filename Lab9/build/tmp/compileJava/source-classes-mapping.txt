@@ -1,0 +1,12 @@
+com/example/Lab9/controller/GameController.java
+ com.example.Lab9.controller.GameController
+com/example/Lab9/model/Board.java
+ com.example.Lab9.model.Board
+com/example/Lab9/model/GameData.java
+ com.example.Lab9.model.GameData
+com/example/Lab9/model/User.java
+ com.example.Lab9.model.User
+com/example/Lab9/model/Authenticator.java
+ com.example.Lab9.model.Authenticator
+com/example/Lab9/controller/LoginController.java
+ com.example.Lab9.controller.LoginController
