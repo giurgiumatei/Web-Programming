@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "UpdateSpecific";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Lab10.Models.Destination
+
+<h1>Update Specific Destination</h1>
+
+<div class="container">
+    <div class="row">
+        <form method="POST" class="col-12" action="UpdateForm">
+            <input type="hidden" id="id" name="id" value="@Model.id" />
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name="city" placeholder="Enter City" value="@Model.city" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country" placeholder="Enter Country" value="@Model.country" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" name="description" placeholder="Enter Description" value="@Model.description" required>
+            </div>
+            <div class="form-group">
+                <label for="targets">Tourist Targets</label>
+                <input type="text" class="form-control" id="targets" name="targets" placeholder="Enter Targets" value="@Model.targets" required>
+            </div>
+            <div class="form-group">
+                <label for="cost">Cost</label>
+                <input type="number" class="form-control" id="cost" name="cost" value="@Model.cost" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/Dashboard" type="button" class="btn btn-danger">Back</a>
+        </form>
+    </div>
+</div>
